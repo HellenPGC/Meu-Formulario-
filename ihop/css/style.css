@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    color: green; 
+    background-color:black; 
+}
+/* criação da animação */
+
+@keyframes mainAnimation {
+    /* INICIO PARA O FINAL */
+    from {
+        /* COM EIXO X, COM EIXO Y , ROTATE,  */
+        transform: scale(0) translateX(-100%) translateY(-100%);
+    }
+
+    to {
+        transform: scale(100%) translateX(0) translateY(0);
+    }
+}
+
+@keyframes imageRotate {
+    0%{
+transform: rotate(0) scale(1) skew(0);
+    }
+    50%{
+transform: rotate(360deg) scale(1.8);
+    }
+    100%{
+        transform: rotate(0) scale(1);
+    }
+}
+
+/* aplicamos a animação criada, e dizemos em quanto tempo será executada.. */
+main {
+    text-align: center;
+    animation: mainAnimation 1s;
+}
+
+
+h2{
+    background-color: green;
+    color: white; 
+}
+
+
+main img {
+    width: 150px;
+    transition: all 0.5s;
+}
+
+main img:hover{
+    animation: imageRotate 5s ;
+}
+.container {
+    padding: 0 30%;
+
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+
+}
+
+select {
+    margin: 0px auto 15px;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px;
+    margin-top: 10px;
+    color: red;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input:focus{
+    background-color: yellow;
+}
+
+textarea:focus{
+    background-color: greenyellow;
+}

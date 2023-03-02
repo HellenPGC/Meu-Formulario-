@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHOP</title>
+    <link rel="stylesheet" href="/ihop/css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/5e5963101554619.Y3JvcCwyNTUxLDE5OTUsMCwyNzc.png"> 
+            <h2>SUA CONFRARIA EM CASA</h2>
+        </section>
+
+        <fieldset>
+            <legend>DADOS PARA A ENTREGA:</legend>
+
+            <form action="#" method="POST" >
+                <div class="form">
+
+                <label for="email" >E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required> 
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="whats">WhatsApp:</label>
+                <input type="text" name="whats" id="whats" placeholder="Digite seu WhatsApp" required>
+
+                <label for="endereco">Endereço:</label>
+                <textarea name="endereco" id="endereco" cols="22" rows="4"></textarea>
+            
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>ESCOLHA SUA CERVEJA:</legend>
+            <select name="lanches" id="lanches">
+                <option value="cerveja">Selecione uma opção</option>
+                <option value="IPA">IPA | Invicta 1000IBU 600ml</option>
+                <option value="APA">Porter | Martinica Robust 600ml</option>
+                <option value="Sour">Sour | Maltesa Arlequina 600ml</option>
+                <option value="Witbier">Trigo | Walfänger Weizen 600ml</option>
+                <option value="Pilsen">Lager | Colorado Ribeirão 600ml</option>
+                
+           </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>FORMA DE PAGAMENTO:</legend>
+
+            <input type="radio" name="pagamento" id="dinheiro">
+            <label for="dinheiro">Dinheiro</label>
+            <input type="radio" name="pagamento" id="credito">
+            <label for="credito">Credito</label>
+            <input type="radio" name="pagamento" id="debito">
+            <label for="debito">Debito</label>
+            <input type="radio" name="pagamento" id="PIX" checked>
+            <label for="pix">Pix</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>COMO DESEJA RECEBER?</legend>
+
+            <input type="checkbox" name="colher" id="colher">
+            <label for="colher">Natural</label>
+            <input type="checkbox" name="garfo" id="garfo">
+            <label for="garfo">Gelada</label>
+            <input type="checkbox" name="hashi" id="hashi">
+            <label for="hashi">Embalada com gelo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>QUANDO DESEJA RECEBER?</legend>
+            <input type="datetime-local" name="data" id="data">
+        </fieldset>
+
+
+        <button type="submit">Pedir</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    </main>
+</body>
+
+</html>
